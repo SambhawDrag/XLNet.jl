@@ -20,3 +20,21 @@ jobs:
   fast_finish: true
   allow_failures:
     - julia: nightly
+
+matrix:
+  allow_failures:
+    - julia: nightly
+  exclude:
+    - os: osx
+      julia: 1.6
+    - os: windows
+      julia: 1.6
+    - os: osx
+      julia: nightly
+    - os: windows
+      julia: nightly
+  fast_finish: true
+branches:
+  only:
+    - master
+    - /release-.*/
