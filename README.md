@@ -15,8 +15,8 @@ XLNet is an generalized autoregressive pretraining for language understanding. T
 
 XLNet is an *auto-regressive* language model which outputs the **joint probability** of a sequence of tokens based on the [**Transformer**](https://arxiv.org/abs/1901.02860) architecture with recurrence. Its training objective calculates the probability of a word token conditioned on **all permutations of word tokens in a sentence, as opposed to just those to the left or just those to the right of the target token**.
 #
-## **Novel Features in XLNet**
-XLNet was proposed by researchers at Google in 2019. Since,
+## **What makes XLNet so special?**
+XLNet was proposed by researchers at Google Inc. in 2019. Since,
 - The autoregressive language model (e.g.GPT-2) is only trained to encode a unidirectional context and not effective at modeling deep bidirectional contexts, and 
 - Autoencoding (e.g.BERT) suffers from the pre-train fine-tune discrepancy due to masking, 
 XLNet borrows ideas from the two types of objectives while avoiding their limitations.
@@ -34,6 +34,7 @@ and, they include similar settings of the corresponding BERT.
 
 ---
 ### **1. XLNet benefits from Auto-Regression and Auto-Encoding models**
+> Add here 1
 ---
 ### **2. Permutation Language Modelling**
 
@@ -59,6 +60,7 @@ During training, for a fixed factorization order, XLNet is a unidirectional lang
 
 ---
 ### **3. Two-Stream Self-Attention with Target-Aware Representation**
+> Add here 2
 ---
 #
 
@@ -68,7 +70,7 @@ During training, for a fixed factorization order, XLNet is a unidirectional lang
 - [ ] Convert pre-train weights to bson
 - [ ] Create tokenizer : sentence-piece 
 - [ ] Add as xlnet_tokenizer.jl
-- [ ] Wrapper for transformer-XL with features essential to XLNet
+- [ ] Transformer-XL encoder-decoder base with features essential to XLNet
 - [ ] ...
 
 ## **Status**
