@@ -4,9 +4,15 @@ authors = ["Sambhaw Kumar, <vampiresambhaw@gmail.com>"]
 version = "0.1.0"
 
 [deps]
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
+DataDeps = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
 Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+Transformers = "21ca0261-441d-5938-ace7-c90938fde4d4"
+WordTokenizers = "796a5d58-b03d-544a-977e-18100b691f6e"
+Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
 [compat]
 julia = "1.3"
