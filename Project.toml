@@ -1,0 +1,13 @@
+name = "XLNet"
+uuid = "305c2916-81c8-45dd-a1d2-ab952ab2a616"
+authors = ["Sambhaw Kumar, <vampiresambhaw@gmail.com>"]
+version = "0.1.0"
+
+[compat]
+julia = "1.3"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
