@@ -3,6 +3,11 @@ uuid = "305c2916-81c8-45dd-a1d2-ab952ab2a616"
 authors = ["Sambhaw Kumar, <vampiresambhaw@gmail.com>"]
 version = "0.1.0"
 
+[deps]
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
 [compat]
 julia = "1.3"
 
