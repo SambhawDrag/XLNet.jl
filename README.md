@@ -1,7 +1,7 @@
 # **XLNet**
 A Julia based implementation of **XLNet: A Generalized Autoregressive Pretraining for LU. (Flux and JuliaText)**
-#### [Original Implementation - TensorFlow: *zihangdai/xlnet*](https://github.com/zihangdai/xlnet)
-#### [HuggingFace Implementation - PyTorch: *huggingface/transformers/**src/transformers/models/xlnet***](https://github.com/huggingface/transformers/tree/master/src/transformers/models/xlnet)
+- #### [Original Implementation - TensorFlow: *zihangdai/xlnet*](https://github.com/zihangdai/xlnet)
+- #### [HuggingFace Implementation - PyTorch: *huggingface/transformers/**src/transformers/models/xlnet***](https://github.com/huggingface/transformers/tree/master/src/transformers/models/xlnet)
 # 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://SambhawDrag.github.io/XLNet.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://SambhawDrag.github.io/XLNet.jl/dev)
@@ -38,7 +38,7 @@ and, they include similar settings of the corresponding BERT.
 ### **2. Permutation Language Modelling**
 
 <p align="center">
-<img src="doc_img/PLM.png" width="55%" height="55%">
+<img src="doc_img/PLM.png" width="100%" height="100%">
 </p>
 
 Specifically, for a sequence _**X{...}**_ of length _**T**_, there are _**T**_ different orders to perform a valid autoregressive factorization! Intuitively, if model parameters are shared across all factorization orders, in expectation, the model will learn to gather information from all positions on both sides. Let, _**P<sub>T</sub>**_ be the set of all possible permutations of a sequence **[1,2,…, T]** and use _**z<sub>t</sub>**_ and _**z<sub><t</sub>**_ to denote the _t-th element_ and the _first t−1_ elements of a permutation, _**p ∈ P<sub>T</sub>**_. 
