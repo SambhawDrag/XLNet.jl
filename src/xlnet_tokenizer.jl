@@ -27,7 +27,19 @@ end
 function load_vocab_from_protobuf(ty::Type{T}, filenum::Int=1; unk_token="<unk>") where T<:PretrainedTokenizer
     filepath = @datadep_str tokenizer_files(ty)[filenum]
     name = tokenizer_files(ty)[filenum]
-    """WIP"""
+    """
+    - Deserialize spiece.model
+    - readproto
+    - load into sentence piece model below 
+    """
+    if haskey(vocab_map, unk_token)
+        unk_id = vocab_map[unk_token][2]
+    else
+        throw(DomainError(unk_token, "Unknown token is not in the vocabulary"))
+    end 
+    
+    spm = SentencePieceModel(vocab_map, unk_id)
+    return spm
 end
 
 # To initialize the SentencePieceModel by providing the `vocab filepath` :: load_vocab(path; unk_token="<unk>")
